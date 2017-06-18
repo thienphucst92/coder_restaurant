@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :food_items
   get 'menu' => 'static_pages#menu'
   get 'contact' => 'static_pages#contact'
 
