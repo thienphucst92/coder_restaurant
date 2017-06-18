@@ -1,0 +1,16 @@
+<h1>Thank you for your Order!</h1>
+<%= image_tag @food_item.image_url %>
+<h3>Name: </h3>
+<%=  @order.name %> <br>
+<h3>Phone: </h3>
+<%=  @order.phone %> <br>
+<h3>Address: </h3>
+<%=  @order.address %> <br>
+<h3>Food: </h3>
+<%=  @food_item.name%> <br>
+<h3>Price: </h3>
+<%=  @food_item.price %> <br>
+<h3>Fee: </h3>
+<%= "20,000 VND" %>
+<h3>Total: </h3>
+<%=  @food_item.price + 20000 %> <br>

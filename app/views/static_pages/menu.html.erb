@@ -5,6 +5,14 @@
   <% end %>
 </div>
 
+<div class="well">
+  <%= form_tag nil, method: 'get' do %>
+   <%= hidden_field_tag :section_id, params[:section_id] %>
+   <%= select_tag :sort_option, options_for_select([['Name', 'name'], ['Price', 'price']]) %>
+   <%= select_tag :sort_by, options_for_select([['Asecending', 'asc'], ['Desencding', 'desc']]) %>
+   <%= submit_tag "Sort", class: "btn btn-sm btn-success" %>
+  <% end %>
+</div>
 <% @food_items.each do |food| %>
   <div class="card">
     <div class="card-header">
@@ -13,5 +21,6 @@
     <div class="card-block">
       <%= image_tag(food.image_url) %>
     </div>
+    <%= link_to "Order", new_food_item_order_path(food), class: "btn btn-primary" %>
   </div>
 <% end %>
