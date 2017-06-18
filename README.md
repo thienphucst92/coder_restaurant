@@ -4,9 +4,9 @@
 
 Submitted by: Phuc Tran
 
-Time spent: **XX** hours spent in total
+Time spent: **15** hours spent in total
 
-URL: **heroku-app-url**
+URL: **https://damp-headland-27872.herokuapp.com/**
 
 ## User Stories
 
@@ -20,7 +20,7 @@ URL: **heroku-app-url**
   * [x] Lunch
   * [x] Dinner
   * [x] Drinks
-* [ ] User should see at least 5 food items in each section.
+* [x] User should see at least 5 food items in each section.
 * [x] Each food item should have the following fields:
   * Name (Canh Chua)
   * Description (Delicious fish soup)
